@@ -16,11 +16,11 @@ class COLMAPParams:
         self.parser = argparse.ArgumentParser()
         self.parser.add_argument("image_path", help="image path")
         self.parser.add_argument("workspace_path", help="workspace path")
-        self.parser.add_argument(
+        '''self.parser.add_argument(
             "--mask_path",
             help="path for mask to exclude feature extration from those regions",
             default=None,
-        )
+        )'''
         self.parser.add_argument(
             "--dense_max_size", type=int, help='Max size for dense COLMAP', default=384,
         )
@@ -28,6 +28,11 @@ class COLMAPParams:
 
     @staticmethod
     def add_arguments(parser):
+        parser.add_argument(
+            "--mask_path",
+            help="path for mask to exclude feature extration from those regions",
+            default=None,
+        )
         parser.add_argument(
             "--colmap_bin_path",
             help="path to colmap bin. COLMAP 3.6 is required to enable mask_path",
