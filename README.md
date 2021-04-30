@@ -1,5 +1,4 @@
- # [SIGGRAPH 2020] Consistent Video Depth Estimation
- # Baseline implementation for CSCI 5563 Group Project
+ # Baseline for CSCI 5563 Group Project: Improving Consistent Depth Estimation
  
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1i5_uVHWOJlh2adRFT5BuDhoRftq9Oosx#scrollTo=lNc6HHfHDfnE)
  
